@@ -1,0 +1,146 @@
+.slideshowWrapper {
+    width: 100%;
+    margin: 0 auto; 
+    /* margin-top: 10px; */
+  }
+  
+.slideshow {
+    width: 100%;
+    height: 600px; 
+    overflow: hidden;
+    position: relative;
+ }
+  
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+  
+.slide.active {
+    opacity: 1;
+  }
+  
+.slideDescription {
+    position: absolute;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+.prevButton,.nextButton {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5); 
+  color: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.prevButton {
+  left: 10px; 
+}
+
+.nextButton {
+  right: 10px; 
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px; /* Mengatur lebar maksimum konten */
+  margin: 20px auto;
+}
+
+.content {
+  width: 80%; /* Mengatur lebar konten slideshow */
+}
+
+.popularNews {
+  width: 20%; /* Mengatur lebar konten berita terpopuler */
+}
+
+.detailBerita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.detailBerita img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.detailBerita > * {
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+
+.additionalContainer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 20px;  */
+}
+
+.containerBerita {
+  display: flex;
+  align-items: center; 
+  padding: 10px;
+}
+
+.containerBerita img {
+  max-width: 30%; /* Membatasi lebar gambar agar sesuai dengan ukuran container */
+  height: auto; /* Memastikan gambar tidak menjadi terlalu besar */
+  margin-right: 20px; /* Berikan margin agar gambar tidak terlalu dekat dengan teks */
+}
+
+.containerBerita a {
+  font-size: 14px; /* Ubah ukuran font untuk tautan "Baca lebih lanjut" */
+  color: white; /* Atur warna tautan */
+  text-decoration: none;
+}
+
+.textDescription {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center; 
+}
+
+.textDescription Text {
+  font-size: 16px; 
+  margin-bottom: 5px; 
+  font-weight: 700; 
+}
+
+.textDescription Button {
+  margin-top: 10px; 
+  display: inline-block;
+}

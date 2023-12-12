@@ -1,15 +1,16 @@
 import { HeaderMenu } from '@/components/layout/HeaderMenu';
 import { FooterLinks } from '@/components/layout/Footer';
-
-import {  HeroImageRight } from '@/components/layout/landingPage';
+import ListBerita from '@/components/layout/listBerita';
+// import { listBerita } from '@/components/layout/listBerita';
 
 
      {/* <UserInfoIcons/> */}
-export default function Home(){
+            {/* <TableSelection/>        */}
+export default function Berita(){
     return(
         <div>
             <HeaderMenu/>
-            <HeroImageRight/>
+            <ListBerita/>
             <FooterLinks/>    
         </div>
     )
